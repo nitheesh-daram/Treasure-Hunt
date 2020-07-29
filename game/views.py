@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def main_page(request):
-       return render(request,'game/home.html',{"points":data})
+       return render(request,'game/home.html',{})
