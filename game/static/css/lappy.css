@@ -1,0 +1,114 @@
+@import url("./website.css");
+
+@media screen and (min-width: 700px) {
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+    .header-area .main-menu .navbar .navbar-brand i {
+        width: 100%;
+    }
+
+    .scroll-cards .card-container {
+        /* width: 100%; */
+        margin-left: 2%;
+        overflow: hidden;
+        display: flex;
+        background-color: #100e17;
+        padding: 5%;
+        padding-top: 10%;
+        margin-top: 2%;
+    }
+
+    .header-area .main-menu .navbar-nav a:hover {
+        transform: scale(1.2);
+    }
+
+    .cards {
+        min-width: 30%;
+        max-width:30%;
+        min-height: 30%;
+        border-radius: 25px;
+        background-color: #17141d;
+        box-shadow: -1rem 0 2rem #000;
+        border-color: #ffffff10;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        transition: 0.2s;
+        position: relative;
+    }
+
+    .date {
+        color: #ffffff;
+    }
+
+
+    .cards .category-title {
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+    }
+
+    .cards .article-title {
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    .cards .article-header {
+        margin-bottom: auto;
+    }
+
+    .cards:not(:first-child) {
+        margin-left: -10%;
+    }
+
+    .cards:hover:not(:last-child) {
+        transform: translateY(-4rem);
+    }
+
+    .cards:hover~.cards {
+        transform: translateX(100px);
+    }
+
+    .tags {
+        visibility: hidden;
+
+    }
+
+    .scroll-cards .card-container .cards:hover>.tags {
+        transition-delay: 0.3s;
+        visibility: visible;
+    }
+
+    .scroll-cards {
+        box-sizing: border-box;
+        /* margin-left: 15%; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .certificates {
+        /* border-style: dashed; */
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -8%;
+    }
+
+    .drive{
+        margin-top: 10%;
+        margin-left: 40%;
+        margin-right: 25%;
+      }
+      
+      .btn-drive{
+          width: 50%;
+          padding-top: 2%;
+          padding-bottom: 2%;
+      }
+
+      .tier-item{
+        margin-top: 10%;
+    }
+}

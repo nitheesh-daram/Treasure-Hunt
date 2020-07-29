@@ -1,0 +1,66 @@
+.header-area .main-menu .navbar .navbar-brand {
+    padding: 0 2% 0 5%;
+    /* align-self: center; */
+}
+
+.header-area .main-menu .navbar {
+    padding: 1% 2%;
+    background-color: rgb(0, 0, 0);
+    /* background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0,1)) ; */
+}
+.site-main .site-banner {
+    /* background-image: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0, 0, 0,0.95)) ; */
+    background-position: 0% 50%;
+}
+
+
+.about-area {
+    /* background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.95),rgba(0, 0, 0,0.9)) ; */
+    color: rgb(255, 255, 255);
+}
+
+.about-image {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.about-area {
+    padding: 8% 5%;
+}
+.about-area .about-title .paragraph>p {
+    padding: .4% 0;
+    font: normal bold 16px/25px;
+    color: black;
+}
+.para{
+    margin-top: 10%;
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+li{
+    color: black;
+}
+
+body{
+    font-family: 'Monda', serif;
+}
+
+hr {
+    margin: 4rem 0;
+    background-image: linear-gradient(to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
+    border: 0;
+    height: 1px;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.login{
+    margin-left: 20%;
+    margin-right: 20%;
+}

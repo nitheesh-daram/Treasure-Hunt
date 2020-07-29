@@ -1,0 +1,70 @@
+
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+     <main>
+         <section class="about-area container-fluid" id="about">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-6 col-md-12">
+                         <div class="about-image ">
+                             <img src="{% static 'images/banner.jpg' %}" alt="dp" class="img-fluid rounded">
+                         </div>
+                     </div>
+                     <div class=" col-lg-6 col-md-12 about-title">
+                         <div class="paragraph py-4 w-75">
+                             <p class="para" style="color: black;"> <strong> Jaipur brahman </strong> is a treasure hunt game where you have
+                                 to reach to the
+                                 location by finding a particular treasure at each place. Each place is a heritage place
+                                 of Jaipur- The capital of Rajasthan.</p>
+                             <p class="para">Also known as “Pink City”. You have to find the place and treasure by using
+                                 maps, QR Codes, Compass, Robot proof etc. You will be given 45 minutes to complete the
+                                 treasure hunt. You will get bonus and points after every location and also leader board
+                                 will be used to show your level and points and can easily compare with your friends’
+                                 level of game.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+           <hr>
+         <section class="about-area container-fluid" id="intro">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class=" col-lg-6 col-md-12 about-title">
+                         <h2 class="text-uppercase pt-5">INTRODUCTION</h2>
+                         <div class="paragraph py-4 w-75">
+                             <p class="para">
+                                 This game is made for tourist who love to travel and know more about the places. We
+                                 have included all the heritage places so you can visit the best places and know the
+                                 culture of it. As the level goes up, you will have to find the place and get the
+                                 treasure, you will get all the information and description of the places after reaching
+                                 there. The reason behind the structure of places and reason of building will be told
+                                 after playing. So, roll up your sleeves, pull your Socks!! Get ready for the game.</p>
+                         </div>
+                     </div>
+                     <div class=" col-lg-6 col-md-12 about-title">
+                         <h2 class="text-uppercase pt-5">Rules</h2>
+                         <div class="paragraph py-4 w-75">
+                             <ol>
+                                 <li>You will get 45 minutes to complete the task.</li>
+                                 <li> the map is embedded in the game itself. so, you cannot use other device for the
+                                     help.</li>
+                                 <li>Pay attention to details and team up properly inside the app. </li>
+                                 <li> Teams of 2-4 people. No more, no less. Whoever is registered on the team inside
+                                     the
+                                     app are the only people who qualify for prizes.</li>
+                                 <li> You and your teammate(s) must all be registered! Register now, then pick your
+                                     teammate(s) any time before the Hunt and make sure they register too!</li>
+                                 <li>You are allowed to buy tickets for your teammates, but they must check themselves
+                                     in
+                                     on the app to sign and agree to Waiver, Rules, etc. </li>
+                             </ol>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+
+     {% endblock content %}

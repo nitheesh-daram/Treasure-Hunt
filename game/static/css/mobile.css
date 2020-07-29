@@ -1,0 +1,133 @@
+@import url("./website.css");
+
+@media screen and (max-width: 700px) {
+    .scroll-cards .card-container {
+        /* width: 100%; */
+        margin-left: 2%;
+        overflow: hidden;
+        display: flexbox;
+        background-color: #100e17;
+        padding: 15%;
+        padding-top: 40%;
+    }
+    /* .about-area .container-fluid .row .col-lg-6 .about-image {
+      display: none;
+    } */
+    .site-main .bg {
+        /* display: hidden; */
+        background-image:url('../images/bg-m.jpg');
+        filter: brightness(0.3);
+        padding: 0%;
+    }
+    
+    .site-main .skills .first-row .col-lg-3>.single-skill {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 10px;
+    }
+
+    .cards {
+        max-width: 100%;
+        border-radius: 25px;
+        background-color: #17141d;
+        box-shadow: 0rem 0 1rem #000;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        /* margin-top: -20%; */
+        transition: 0.2s;
+        position: relative;
+    }
+
+    .date {
+        color: #ffffff;
+    }
+
+    .cards .category-title {
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+    }
+
+    .cards .article-title {
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    .cards .article-header {
+        /* width: 60%; */
+        margin-bottom: auto;
+    }
+
+    .tags {
+        visibility: hidden;
+    }
+
+    .scroll-cards .card-container .cards:hover>.tags {
+        visibility: visible;
+    }
+
+    .cards:not(:first-child) {
+
+        margin-top: -40%;
+    }
+
+    .cards:hover:not(:last-child) {
+        transform: translateY(-68.5%);
+    }
+
+    .cards:hover~.cards {
+        transform: translateZ(130px);
+
+    }
+
+    .scroll-cards {
+        box-sizing: border-box;
+        /* margin-left: 15%; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .btn {
+        display: inline-block;
+    }
+    .card{
+        width: 10%;
+        margin-left: 1%;
+        padding-right: 50%;
+    }
+    .certificates{
+        margin: 0%;
+    }
+    .drive{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 40%;
+        margin-right: 40%;
+      }
+
+      .contact .container{
+     flex-direction: column;
+     margin-left: 0%;
+     margin-top: 20%;
+
+    }
+    .contact .container>p{
+        padding-top: 10%;
+    }
+    .tier-item{
+        /* margin-top: 10%; */
+        margin-bottom: 10%;
+    }
+    .github a{
+        margin-left: 37%;
+    }
+
+    .tier-item{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .menu-dp{
+        width: 35%;
+    }
+}

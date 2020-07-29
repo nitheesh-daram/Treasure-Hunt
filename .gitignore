@@ -1,0 +1,15 @@
+*.pyc
+
+*~
+
+/.vscode
+
+__pycache__
+
+virtual
+
+db.sqlite3
+
+/static
+
+.DS_Store

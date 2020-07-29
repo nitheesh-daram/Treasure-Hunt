@@ -1,0 +1,17 @@
+{% extends 'game/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<section class="container-fluid " >
+    <div class="container-fluid">
+        <div style="margin-left:30%; margin-right: 30%; margin-top: 10%;">
+            <form action="" method="POST" class="form-group" style="color: black;">
+                <p>Already have an account? Login <a href="/login">Here</a></p>
+                {% csrf_token %}
+                {{form | crispy }}
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
