@@ -19,6 +19,9 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treasure Hunt</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
     <link rel="stylesheet" href="{% static 'css/lappy.css' %}">
     <link rel="stylesheet" href="{% static 'css/website.css' %}">
@@ -42,17 +45,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/#intro">Introduction</a>
                     </li>
-                    {% if user.is_authenticated %}
+                    {% if user.is_authenticated and not user.is_superuser %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           {{ user.username}}
+                            Settings
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/map">Map</a>
+                            <a class="dropdown-item" href="#">Invite friends</a>
+                            <a class="dropdown-item" href="#">Rate this APP</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ user.username}}
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <a href="" class="dropdown-item disabled">Points  : {{points}}
+                            </a>
+                            <a href="" class="dropdown-item ">Profile
+                            </a>
                             <a class="dropdown-item" href="#">Leaderboard</a>
                             <a class="dropdown-item" href="#">Cart</a>
-                            <a href="" class="dropdown-item">Settings
-                            </a>
+
                             <a class="dropdown-item" href="logout/" class="nav-link">Logout</a>
                         </div>
                     </li>

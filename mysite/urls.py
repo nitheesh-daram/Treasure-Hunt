@@ -21,4 +21,5 @@ urlpatterns = [
     path('',include('game.urls')),
     path('',include("django.contrib.auth.urls")),
     path('register/',v.register,name='register'),
+    path('map/',include('map.urls')),
 ]
