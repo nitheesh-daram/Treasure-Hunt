@@ -1,0 +1,12 @@
+{% extends 'game/base.html' %}
+{% load static %}
+{% block content %}
+{% for person in data %}
+<div class="card mt-5 mr-5 ml-5 ">
+    <div class="card-body">
+        <h5> {{forloop.counter}}.{{ person.user_name }} <span
+                style="float:right;padding-top: 0%;">{{ person.points }}</span></h5>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
