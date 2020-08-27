@@ -1,0 +1,36 @@
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="about-area container-fluid" id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">Path Finding</h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            <ul>
+                                <li>1st Round is all about reaching Jaipur</li>
+                                <li>You can take help from the GPS to reach to the location. When you reach Jaipur, you
+                                    will
+                                    clear the 1st round.</li>
+                                <li>After reaching to Jaipur you will get 10 points </li>
+                            </ul>
+
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <div class="paragraph py-4 w-75">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <!--TO-DO:- add cards -->
+                            <button class="btn btn-success">Reached Jaipur</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="about-area container-fluid" id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">Level 3</h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            <ul>
+                                <li> <strong>Treasure:-</strong> At the location you will find (Aladdin Ka Chirag- Magic lamp- wish
+                                    lamp).
+                                </li>
+                                <li>Clue for the next location is <br>
+                                   <strong> <q>Make a wish and I will take you to the Royal Textile Gallery</q></strong>
+                                </li>
+                            </ul>
+
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <form action="" method="POST" style="color: black;">
+                        {% csrf_token %}
+                        <label for="1">location</label><br>
+                        <input type="text" id="fname" name="location" required><br>
+                        <br>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}

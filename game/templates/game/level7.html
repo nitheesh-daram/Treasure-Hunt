@@ -1,0 +1,47 @@
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="about-area container-fluid" id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">Level 6</h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            <ul>
+                                <li>Jal Mahal: Here you will get some interesting things to do, to change the
+                                    outfit and get the photos clicked. you may find the Candie Man and
+                                    enjoy it.</li>
+                                <li> <strong>Treasure:-</strong>Candie Man
+                                </li>
+                                <li>Clue for the next location is <br> <br>
+                                    <strong><q>अपनी खूबसूरत बनावट सेमेंएकता का संदेश पहंचता हं <br>
+                                            जो सही जगह मुझमेंतुम खोजो तो फू लोंमेंकई कलाकृ ततयां तदखता हंवही ंकही
+                                            ंपेतुमको शीतल सा आंनद तदलाता हं <br>
+                                            चारोंतदशाओंकी तरह मेंखुद को तुमसेरूबरू करवाता हं <br>
+                                            तभी तो ज़मानेमेंतारोंमेंतोला जाता हं <br> <br> Architecture inspired by
+                                            Mughal and
+                                            Hindus <br> A place in Sheesh Mahal where you can find and another place
+                                            where you can find peace called sukh niwas <br> 4 diff gates for entrance
+                                            <br></q></strong>
+                                </li>
+                            </ul>
+
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <form action="" method="POST" style="color: black;">
+                        {% csrf_token %}
+                        <label for="1">location</label><br>
+                        <input type="text" id="fname" name="location" required><br>
+                        <br>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}

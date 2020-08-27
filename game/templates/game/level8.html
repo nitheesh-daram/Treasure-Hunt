@@ -1,0 +1,41 @@
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="about-area container-fluid" id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">Level 6</h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            <ul>
+                                <li>Amer: You will have to reach Sukh Niwas in the Sheesh Mahal located in Amer
+                                    fort. </li>
+                                <li> <strong>Treasure:-</strong>Diamond
+                                </li>
+                                <li>Clue for the next location is <br> <br>
+                                    <strong><q>You'll find celebrities from the field of sports, Bollywood, social
+                                            activists, freedom fighters, and other eminent attraction in a part of this
+                                            place. <br> <br> Itna mat Socho…Soch gehri ho jayee to faisle kamzor ho jate h!
+                                            <br></q></strong>
+                                </li>
+                            </ul>
+
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <form action="" method="POST" style="color: black;">
+                        {% csrf_token %}
+                        <label for="1">location</label><br>
+                        <input type="text" id="fname" name="location" required><br>
+                        <br>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}

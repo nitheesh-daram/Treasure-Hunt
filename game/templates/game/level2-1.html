@@ -1,0 +1,53 @@
+{% extends "game/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="about-area container-fluid" id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">Lucky Code</h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            <ul>
+                                <li>10 QR codes will be assigned to the You.</li>
+                                <li>You will have to scan 3 out of 10, 1 of which will take You to Correct location.
+                                </li>
+                                <li>There will be 10 QR codes, 4 will be empty, 3 will have the correct location with
+                                    hidden treasure and 3 will have wrong location. This phase will be entirely on
+                                    luck.</li>
+                                <li>In the 3 chances if the player is able to fetch the correct right card then only,
+                                    he will be promoted to next phase.</li>
+                            </ul>
+
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 about-title">
+                    <div class="paragraph  row">
+                        <div class="card card-body col-lg-4 ">
+                            <h3 style="text-align: center; color: black;">code 1</h3>
+                            <img class="profile-pic" style="width:100%;" src="{{code_1.url}}">
+                        </div>
+                        <div class="card card-body col-lg-4">
+                            <h3 style="text-align: center; color: black;">code 2</h3>
+                            <img class="profile-pic" style="width:100%;" src="{{code_2.url}}">
+                        </div>
+                        <div class="card card-body col-lg-4">
+                            <h3 style="text-align: center; color: black;">Code 3</h3>
+                            <img class="profile-pic" style="width:100%;" src="{{code_3.url}}">
+                        </div>
+                        
+                    </div><form action="" method="POST" style="color: black;">
+                            {% csrf_token %}
+                            <label for="1">location</label><br>
+                            <input type="text" id="fname" name="location" required><br>
+                            <br>
+                            <button class="btn btn-success">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}
