@@ -1,6 +1,6 @@
 @import url("./website.css");
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
     .btn:hover {
         transform: scale(1.1);
     }
@@ -8,7 +8,6 @@
     .header-area .main-menu .navbar .navbar-brand i {
         width: 100%;
     }
-
     .scroll-cards .card-container {
         /* width: 100%; */
         margin-left: 2%;
@@ -26,7 +25,7 @@
 
     .cards {
         min-width: 30%;
-        max-width:30%;
+        max-width: 30%;
         min-height: 30%;
         border-radius: 25px;
         background-color: #17141d;
@@ -96,19 +95,19 @@
         margin-bottom: -8%;
     }
 
-    .drive{
+    .drive {
         margin-top: 10%;
         margin-left: 40%;
         margin-right: 25%;
-      }
-      
-      .btn-drive{
-          width: 50%;
-          padding-top: 2%;
-          padding-bottom: 2%;
-      }
+    }
 
-      .tier-item{
+    .btn-drive {
+        width: 50%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .tier-item {
         margin-top: 10%;
     }
 }

@@ -51,6 +51,14 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <style>
+        @media screen and (min-width: 700px) {
+            #profile {
+                right: 10%;
+                position: absolute;
+            }
+        }
+
+
         #sortable {
             list-style-type: none;
             margin: 0;
@@ -98,13 +106,15 @@
                         <a class="nav-link" href="/#intro">Introduction</a>
                     </li>
                     {% if user.is_authenticated and not user.is_superuser %}
-                    <li class="nav-item dropdown" style="right: 10%; position: absolute;">
+                    <li class="nav-item dropdown " id="profile">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ user.username}}
                         </a>
                         <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                             <a href="" class="dropdown-item disabled">Points : {{points}}
+                            </a>
+                            <a href="{% url 'game' %}" class="dropdown-item">Start/Resume Game
                             </a>
                             <a href="{% url 'profile'%}" class="dropdown-item ">Profile
                             </a>

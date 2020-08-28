@@ -1,11 +1,13 @@
 {% extends 'game/base.html' %}
 {% load static %}
 {% block content %}
+<h1 class="m-5">Leaderboard</h1>
 {% for person in data %}
-<div class="card mt-5 mr-5 ml-5 ">
+
+<div class="card mt-5 mr-5 ml-5 fluid-container">
     <div class="card-body">
-        <h5> {{forloop.counter}}.{{ person.user_name }} <span
-                style="float:right;padding-top: 0%;">{{ person.points }}</span></h5>
+        <h5> {{forloop.counter}}. <span> </span> <img src="{{person.profile_pic.url}}" alt="{{person.user_name}}" class="img-thumbnail" style="width:5%;" >  {{ person.user_name }} <span
+                style="float:right;padding-top: 1%;">{{ person.points }}</span></h5>
     </div>
 </div>
 {% endfor %}

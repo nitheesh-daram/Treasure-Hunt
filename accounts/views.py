@@ -9,6 +9,7 @@ def registeruser(request):
     if not request.user.is_authenticated:
         if request.POST:
             form = RegisterForm(request.POST)
+            print(form.errors)
             if form.is_valid():
                 if  form.email_check():
                     messages.info(request,"Email Already exists")
@@ -28,9 +29,12 @@ def loginuser(request):
         return redirect("Home_Page")
     else:
         if request.POST:
+            # print(request.POST)
             username = request.POST.get("username")
             password = request.POST.get("password")
+            # user_level=request.POST.get('')
             user=authenticate(request,username=username,password=password)
+            # print(user)
             if user is not None:
                 login(request,user)
                 return redirect('Home_Page')
